@@ -1,0 +1,7 @@
+name: PY2104
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - matplotlib
+  - astropy
