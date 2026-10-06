@@ -1,0 +1,144 @@
+---
+---
+
+@import "jekyll-theme-minimal";
+
+:root {
+  color-scheme: dark;
+  --page-background: #11151b;
+  --surface-background: #1a212b;
+  --border-color: #354252;
+  --text-color: #d6deea;
+  --muted-color: #a6b2c2;
+  --heading-color: #f1f5f9;
+  --link-color: #3697e7;
+}
+
+body {
+  background: var(--page-background);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6,
+strong, dt, th {
+  color: var(--heading-color);
+}
+
+h2, h3, h4, h5, h6 {
+  color: #dfe8f3;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover, a:focus {
+  color: #b4ddff;
+}
+
+a small,
+header p,
+footer,
+small {
+  color: var(--muted-color);
+}
+
+blockquote {
+  border-left-color: var(--border-color);
+}
+
+code, pre {
+  color: var(--text-color);
+}
+
+pre, kbd {
+  background: var(--surface-background);
+  border-color: var(--border-color);
+}
+
+kbd {
+  color: var(--text-color);
+  border-bottom-color: #526176;
+  box-shadow: inset 0 -1px 0 #526176;
+}
+
+th, td {
+  border-bottom-color: var(--border-color);
+}
+
+hr,
+section {
+  border-color: var(--border-color);
+}
+
+.lecture-navigation {
+  border-top: 1px solid var(--border-color);
+}
+
+.symbol-guide {
+  border-top: 1px solid var(--border-color);
+  margin-top: 1.5em;
+  padding-top: 1em;
+}
+
+.symbol-guide h2 {
+  font-size: 1.05em;
+  margin: 0 0 0.8em;
+}
+
+.symbol-guide dl {
+  display: grid;
+  grid-template-columns: 2.3em minmax(0, 1fr);
+  column-gap: 0.5em;
+  row-gap: 0.5em;
+  margin: 0;
+}
+
+.symbol-guide dt,
+.symbol-guide dd {
+  margin: 0;
+}
+
+.symbol-guide dt {
+  color: var(--link-color);
+}
+
+.symbol-guide dd {
+  color: var(--muted-color);
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+mjx-container {
+  color: var(--text-color);
+}
+
+@media screen and (max-width: 960px) {
+  header {
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  header {
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .symbol-guide dl {
+    grid-template-columns: 2.3em minmax(0, 1fr);
+  }
+}
+
+@media print {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    background: #fff;
+    color: #222;
+  }
+}
