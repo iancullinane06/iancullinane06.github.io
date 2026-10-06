@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 # Maxwell's Relations
 Next, we're going to use our new thermodynamic potentials to arrive at some very useful relations.
 First, we need to do a bit of setup. For a general function of two variables which has an exact differential, $f(x,y)$, we have that
@@ -109,3 +110,4 @@ $$
     C_P-C_V = \frac{T V \beta_P^2}{\kappa_T}
 $$
 These are all quantities which are easily measurable in the lab, meaning the difference in the heat capacities can be easily obtained.
+{% endraw %}

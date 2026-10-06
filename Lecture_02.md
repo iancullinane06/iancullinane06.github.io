@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 # Topics
 * Thermal Equilibrium and the Zeroth Law of Thermodynamics
 * Thermometers
@@ -87,3 +88,4 @@ In order to make use of this definition for temperature, we are going to use an 
 * **The microcanonical ensemble**: an ensemble of systems that all have the same fixed energy.
 * **The canonical ensemble**: an ensemble of systems, each of which can exchange energy freely with a large reservoir of energy.
 * **The grand canonical ensemble**: an ensemble of systems, each of which can exchange energy and particles freely with a large reservoir.
+{% endraw %}

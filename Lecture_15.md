@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 # The Maxwell Boltzmann Distribution
 The next question we want to ask is, given a gas at a certain temperature, what is the distribution of particle velocities within that gas?
 
@@ -85,3 +86,4 @@ $$
 in agreement with our previous result for the an ideal gas (if we multiple this by N particles).
 
 The distribution we have derived above is the speed distribution - the velocity distribution is subtlety different in its derivation, but I recommend looking it up to become familiar with it.
+{% endraw %}

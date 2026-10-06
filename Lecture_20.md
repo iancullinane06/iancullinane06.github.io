@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 # The Clausius-Clapeyron Equation
 
 We next will focus on deriving a differential equation for the slope of a phase equilibrium curve. This specifies the slope ${\rm d} P/{\rm d} T$ at every point of the curve. First, let's consider two points separated by some small ${\rm d} T$ and ${\rm d} P$ on the phase equilibrium curve such that
@@ -101,3 +102,4 @@ $$
     \Delta T = - \frac{6.5\times10^4}{3.62\times10^3} = -18^{\rm o}
 $$
 Meaning water boils at $82^{\rm o}$C at this altitude.
+{% endraw %}

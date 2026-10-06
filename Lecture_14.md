@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 # Quantum Concentration
 Now, the partition function for a single particle in an ideal gas is given by
 $$
@@ -153,3 +154,4 @@ $$
 \end{align}
 $$
 from which all other thermodynamic quantities of an ideal gas can be derived.
+{% endraw %}

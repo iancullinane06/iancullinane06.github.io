@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 # The Chemical Potential and Phase transitions
 The next part of this course will focus on what happens if the particle number within a system is no longer kept constant, and what happens when systems of two or more phases are in equilibrium. Here, a phase is a homogeneous part of a system bounded by surfaces, across which the properties of the system change discontinuously (say for example a container which has both water which is boiling at 100 degrees, above which we have water vapour also at 100 degrees). We will restrict ourselves to a single component (that is, we won't consider a mixture of water and acid) as this would be a complex task.
 
@@ -134,3 +135,4 @@ $$
 Rather than just describing a curve, this condition describes the intersection of two curves, with the intersection point known as the triple point. A simple curve is plotted below as an example, but I recommend looking up the curve for water to get an idea of the full complexity of such a graph. The triple point of water occurs at a temperature and pressure of (611.567 Pa, 273.16 K).
 
 ![TPCurve](Figures/Triple_Phase.svg)
+{% endraw %}

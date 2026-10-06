@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 In this lecture, we are going to discuss entropy. In particular, we'll cover:
 
 * Entropy of mixing.
@@ -103,3 +104,4 @@ Now, $\ln (N) - \ln (n_i) = \ln(N/n_i) = \ln(1/P_i)= -\ln(P_i)$. This gives us G
 $$
 S = - k_{\rm B} \sum_i P_i \ln(P_i)
 $$
+{% endraw %}

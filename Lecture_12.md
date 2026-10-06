@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 In the last lecture, we were looking at what quantities we can derive from the partition function. Let's very quickly wrap up that discussion.
 ### Pressure
 From Lecture 7 we have that
@@ -148,3 +149,4 @@ $$
     \left( \frac{\partial \chi}{\partial T} \right)_B < 0
 $$
 We'll need this in a second.
+{% endraw %}

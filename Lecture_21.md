@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 ### Approximating the vapour pressure curve
 When dealing with the vapour pressure curve (that is, liquid and vapour in equilibrium with each other), the following approximate treatment can be used. First, we shall assume that the volume of the substance in the vapour phase is much larger than in the liquid phase (a quick look at the numbers for water should convince you this is true, where the difference is 3 orders of magnitude). As such
 $$
@@ -114,3 +115,4 @@ $$
 That is, a real gas cools as it expands during a Joule expansion. This means that if we had a gas and wanted to cool it, we could use the Joule effect to do it without doing any work on the gas.
 
 However, the setup is not really useful in real world situations (how often do you have a gas totally isolated to one side of a chamber, and then let it expand? Also, what would you even do with it afterwards?).
+{% endraw %}

@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 # Topics
 * The First Law.
 * Heat Capacity.
@@ -174,3 +175,4 @@ P^{1-\gamma} T^{\gamma} &= const\\
 P V^{\gamma} &= const
 \end{align}
 $$
+{% endraw %}

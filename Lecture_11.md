@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 # Equipartition of Energy
 Before going further, we are going to discuss the equipartition theorem. To motivate our discussion, let's write down what the kinetic energy of a particle of mass m and moving a velocity v is
 $$
@@ -204,3 +205,4 @@ $$
     S = k_{\rm B} \ln(Z) + k_{\rm B} T \left(\frac{\partial \ln(Z)}{\partial T}\right)_V
 $$
 which is the same as the above expression if we use the relation between $U$ and $\frac{{\rm d} \ln Z}{{\rm d} T}$ derived earlier.
+{% endraw %}

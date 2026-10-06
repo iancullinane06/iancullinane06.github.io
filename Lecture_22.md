@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 # The Joule Thomson Expansion
 The Joule-Thompson builds on this initial picture. Instead of a container with a stationary gas, and where we let the gas change volume at constant energy, it instead assumes we have a steady flow of gas from a high pressure region at $P_1$ to a low pressure region at $P_2$ via a throttle (or a porous plug, something that can maintain the pressure difference).
 
@@ -49,3 +50,4 @@ $$
     \left( \frac{\partial V}{\partial T} \right)_P = \frac{V}{T}
 $$
 This equation defines a curve in the T-P plane, and is known as the inversion curve. In the lecture, and in Blundell & Blundell, they give a nice discussion as to what the inversion curve is - I highly recommend reading this in order to get a better understanding of what this equation means.
+{% endraw %}

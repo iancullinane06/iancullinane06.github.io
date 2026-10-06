@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 * Entropy changes within closed systems.
 * Entropy an the 1st law.
 * Entropy from a statistical point of view.
@@ -136,3 +137,4 @@ $$
     S = k_{\rm B} \ln \Omega.
 $$
 At this point, it's important to note that this definition assumes that the system is in a macrostate with a fixed energy (this comes from the section entitled "Temperature" back in Lecture 2). We'll generalise the result later.
+{% endraw %}

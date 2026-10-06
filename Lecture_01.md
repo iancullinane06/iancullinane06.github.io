@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 # Topics
 * Stirling's Law for large numbers
 * Macroscopic quantities
@@ -116,3 +117,4 @@ $$
 \end{align}
 $$
 We'll come back to which one we think should be larger later.
+{% endraw %}

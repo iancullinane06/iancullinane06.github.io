@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 At the end of the last lecture, we derive Curie's, which states that magnetic susceptability of a paramagnet is inversely proportional to its temperature, or
 $$
     \chi \propto \frac{1}{T}
@@ -91,3 +92,4 @@ This implies that
 $$
     g(k){\rm d}k = \frac{1}{8}\frac{4\pi k^2 {\rm d} k}{(\pi/L)^3} = \frac{V k^2 {\rm d} k}{2\pi^2}
 $$
+{% endraw %}

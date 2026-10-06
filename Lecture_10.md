@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 # The absolute scale of entropy?
 The second law of thermodynamics introduced the concept of entropy, and that it either always stays constant or else increases for an isolated system. However, we don't know yet how to measure entropy, or what a typical value for it might be.
 
@@ -104,3 +105,4 @@ Another consequence is that no system can be cooled to absolute 0 K. To see this
 
 ![Third_Law](Figures/ThirdLaw.jpg)
 However, if instead all processes lead to an entropy of 0 at a temperature of 0 K, then such a combination of isentropic and isothermal processes will only ever let you approach a temperature of 0 K, it will never actually get you there.
+{% endraw %}

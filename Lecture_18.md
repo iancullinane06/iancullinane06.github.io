@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 In the previous lecture, we derived the critical volume for a Van Der Waals gas:
 $$
     V_{\rm C} = 3Nb
@@ -49,3 +50,4 @@ Imagine we have a system which starts at high pressure and low volume (to the ri
 So what does this translate to? It means your system can be in 2 states (a low volume or high volume) state at the same time. Physically, this would mean if you had a system which started as a liquid, then at this point, your system can exist both as a liquid and a gas as the gibbs energy for both phases is the same!
 
 The upper triangle of the Gibbs-Pressure diagram is an interesting phase space. Normally, it's very hard to get a system in there as they are states with higher Gibbs energies, but it is possible. We won't discuss these states in this course, but perhaps you will in future courses.
+{% endraw %}

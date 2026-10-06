@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 # Thermodynamic Potentials
 Up until this point, we have been working a lot with the internal energy if a system, $U$, which is a function of state.
 
@@ -153,3 +154,4 @@ $$
 {\rm d}S_{\rm Total} =-\frac{1}{T}{\rm d G}
 $$
 So, given that the total entropy must be increasing (The second law tells us that ), this final line tells us that  the Gibbs Energy of the system must be decreasing (${\rm d} G \leq 0$) .
+{% endraw %}

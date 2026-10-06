@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 # Topics
 * The Boltzmann Distribution
 * Partition Function and Energy
@@ -84,3 +85,4 @@ As a nice example, consider warming up your hands. If you change the temperature
 In this course, we will endeavour to write exact differentials as ${\rm d} T$, and inexact differentials as đQ. However, some times latex doesn't work with this symbol, so always check one of the course books to be sure whether an equation involves an exact or an inexact differential.
 
 **Equation of state**: An equation of state links together functions of state. For example, $P V = N k_{\rm B} T$ is the equation of state of an Ideal Gas.
+{% endraw %}

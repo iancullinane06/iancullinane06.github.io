@@ -1,6 +1,7 @@
 ---
 layout: lecture
 ---
+{% raw %}
 # Topics
 * The second law of thermoydnamics.
 * Heat Engines.
@@ -209,3 +210,4 @@ $$
 It's worth considering exactly what this condition is now saying. For any system that is thermally isolated, the entropy will stay the same for reversible processes, or will increase for irreversible processes. This is another way of stating the second law of thermodynamics: **"The entropy of an isolated system tends to a maximum"**. 
 
 This has some very fundamental consequences. For example, if the Universe is a isolated system, then it means that entropy of the Universe can only increase.
+{% endraw %}
