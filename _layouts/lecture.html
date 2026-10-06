@@ -10,7 +10,7 @@ window.MathJax = { tex: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [
 {% assign lectures = site.pages | where_exp: "p", "p.name contains 'Lecture_'" | where_exp: "p", "p.name contains '.md'" | sort: "name" %}
 {% for l in lectures %}
   {% if l.url == page.url %}
-    {% assign prev_page = lectures[forloop.index0 | minus: 1] %}
+    {% assign prev_index = forloop.index0 | minus: 1 %}{% assign prev_page = lectures[prev_index] %}
     {% assign next_page = lectures[forloop.index] %}
     {% if forloop.first %}{% assign prev_page = nil %}{% endif %}
   {% endif %}
