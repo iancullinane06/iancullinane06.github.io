@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 # Thermodynamic Potentials
 Up until this point, we have been working a lot with the internal energy if a system, $U$, which is a function of state.
 

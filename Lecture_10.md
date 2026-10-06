@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 # The absolute scale of entropy?
 The second law of thermodynamics introduced the concept of entropy, and that it either always stays constant or else increases for an isolated system. However, we don't know yet how to measure entropy, or what a typical value for it might be.
 

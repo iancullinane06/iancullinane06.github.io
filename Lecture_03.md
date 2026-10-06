@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 # Topics
 * The Boltzmann Distribution
 * Partition Function and Energy

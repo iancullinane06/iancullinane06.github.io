@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 # Maxwell's Relations
 Next, we're going to use our new thermodynamic potentials to arrive at some very useful relations.
 First, we need to do a bit of setup. For a general function of two variables which has an exact differential, $f(x,y)$, we have that

@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 At the end of the last lecture, we derive Curie's, which states that magnetic susceptability of a paramagnet is inversely proportional to its temperature, or
 $$
     \chi \propto \frac{1}{T}

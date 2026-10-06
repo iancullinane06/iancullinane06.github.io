@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 In the previous lecture, we derived the critical volume for a Van Der Waals gas:
 $$
     V_{\rm C} = 3Nb

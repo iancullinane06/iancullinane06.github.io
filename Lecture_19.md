@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 # The Chemical Potential and Phase transitions
 The next part of this course will focus on what happens if the particle number within a system is no longer kept constant, and what happens when systems of two or more phases are in equilibrium. Here, a phase is a homogeneous part of a system bounded by surfaces, across which the properties of the system change discontinuously (say for example a container which has both water which is boiling at 100 degrees, above which we have water vapour also at 100 degrees). We will restrict ourselves to a single component (that is, we won't consider a mixture of water and acid) as this would be a complex task.
 

@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 # The Joule Thomson Expansion
 The Joule-Thompson builds on this initial picture. Instead of a container with a stationary gas, and where we let the gas change volume at constant energy, it instead assumes we have a steady flow of gas from a high pressure region at $P_1$ to a low pressure region at $P_2$ via a throttle (or a porous plug, something that can maintain the pressure difference).
 

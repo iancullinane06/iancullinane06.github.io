@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 # The Clausius-Clapeyron Equation
 
 We next will focus on deriving a differential equation for the slope of a phase equilibrium curve. This specifies the slope ${\rm d} P/{\rm d} T$ at every point of the curve. First, let's consider two points separated by some small ${\rm d} T$ and ${\rm d} P$ on the phase equilibrium curve such that

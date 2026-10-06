@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 In this lecture, we are going to discuss entropy. In particular, we'll cover:
 
 * Entropy of mixing.

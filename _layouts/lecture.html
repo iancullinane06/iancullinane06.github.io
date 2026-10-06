@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<script>
+window.MathJax = { tex: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\\[','\\]']] } };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+{{ content }}
+
+{% assign lectures = site.pages | where_exp: "p", "p.name contains 'Lecture_'" | where_exp: "p", "p.name contains '.md'" | sort: "name" %}
+{% for l in lectures %}
+  {% if l.url == page.url %}
+    {% assign prev_page = lectures[forloop.index0 | minus: 1] %}
+    {% assign next_page = lectures[forloop.index] %}
+    {% if forloop.first %}{% assign prev_page = nil %}{% endif %}
+  {% endif %}
+{% endfor %}
+
+<nav style="display:flex;justify-content:space-between;margin-top:2em;padding-top:1em;border-top:1px solid #e5e5e5;">
+  {% if prev_page %}<a href="{{ prev_page.url | relative_url }}">&larr; Previous</a>{% else %}<span></span>{% endif %}
+  <a href="{{ '/' | relative_url }}">Contents</a>
+  {% if next_page %}<a href="{{ next_page.url | relative_url }}">Next &rarr;</a>{% else %}<span></span>{% endif %}
+</nav>

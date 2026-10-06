@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 # Real Gases
 So, we know of particular cases when gases do not behave like an ideal gas For example as they cool, their heat capacities diverge from the constant that the ideal gas law predicts. So let's look at a few ways in which we can improve on an ideal gas. 
 

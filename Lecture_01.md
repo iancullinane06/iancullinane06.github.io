@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 # Topics
 * Stirling's Law for large numbers
 * Macroscopic quantities

@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 # Topics
 * The second law of thermoydnamics.
 * Heat Engines.

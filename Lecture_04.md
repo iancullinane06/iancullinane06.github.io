@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 # Topics
 * The First Law.
 * Heat Capacity.

@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 ### Approximating the vapour pressure curve
 When dealing with the vapour pressure curve (that is, liquid and vapour in equilibrium with each other), the following approximate treatment can be used. First, we shall assume that the volume of the substance in the vapour phase is much larger than in the liquid phase (a quick look at the numbers for water should convince you this is true, where the difference is 3 orders of magnitude). As such
 $$

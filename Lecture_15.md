@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 # The Maxwell Boltzmann Distribution
 The next question we want to ask is, given a gas at a certain temperature, what is the distribution of particle velocities within that gas?
 

@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 # Equipartition of Energy
 Before going further, we are going to discuss the equipartition theorem. To motivate our discussion, let's write down what the kinetic energy of a particle of mass m and moving a velocity v is
 $$

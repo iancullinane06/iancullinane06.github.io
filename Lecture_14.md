@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 # Quantum Concentration
 Now, the partition function for a single particle in an ideal gas is given by
 $$

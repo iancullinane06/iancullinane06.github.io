@@ -1,3 +1,6 @@
+---
+layout: lecture
+---
 # Topics
 * Thermal Equilibrium and the Zeroth Law of Thermodynamics
 * Thermometers
