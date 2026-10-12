@@ -113,6 +113,28 @@ mjx-container {
   color: var(--text-color);
 }
 
+#lecture-search {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0.4em 0;
+  padding: 0.6em;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background: var(--surface-background);
+  color: var(--text-color);
+  font: inherit;
+}
+
+#lecture-search:focus {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+
+#lecture-search-status {
+  color: var(--muted-color);
+  font-size: 0.9em;
+}
+
 @media screen and (max-width: 960px) {
   header {
     padding-right: 0;
