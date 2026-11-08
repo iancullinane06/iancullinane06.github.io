@@ -160,7 +160,7 @@ This condition defines a curve in the $(P,T)$ plane. For any combination of temp
 
 A simple example of this is shown below. In this, 1 and 2 define the regions in which $g_1 < g_2$ and $g_2 < g_1$ respectively.
 
-![TPCurve](Figures/Gibbs_Free_Energy.svg)
+![TPCurve](../Figures/Gibbs_Free_Energy.svg)
 
 If $N_1$ and $N_2$ are the number of molecules in phases 1 and 2 respectively, then the Gibbs free energy of the system is
 
@@ -184,6 +184,6 @@ $$
 
 Rather than just describing a curve, this condition describes the intersection of two curves, with the intersection point known as the triple point. A simple curve is plotted below as an example, but I recommend looking up the curve for water to get an idea of the full complexity of such a graph. The triple point of water occurs at a temperature and pressure of (611.567 Pa, 273.16 K).
 
-![TPCurve](Figures/Triple_Phase.svg)
+![TPCurve](../Figures/Triple_Phase.svg)
 
 {% endraw %}

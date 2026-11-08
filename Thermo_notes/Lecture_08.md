@@ -162,7 +162,7 @@ $$
 
 So what use are these new thermodynamic potentials? For isolated systems, the entropy tends to increase, as we've seen previously. But often our systems are not isolated, but are embedded inside some surroundings - so let's look at this. The system will be allowed to exchange heat and to do work on the surroundings.
 
-![Entropy_of_mixing](Figures/Surroundings.svg)
+![Entropy_of_mixing](../Figures/Surroundings.svg)
 
 We're going to assume that the surrondings act like a reservoir, and that the temperature of the and volume of surroundings stays constant. The change in entropy of the Universe due to some change in our system and surroundings are
 

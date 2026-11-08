@@ -13,7 +13,7 @@ layout: lecture
 
 Ok, now let's consider the example of two systems put into thermal contact as discussed in lecture 2. However, we're going to change one of the systems such that it acts as a reservoir (or heat bath). We then place the other system into thermal contact with the reservoir. The reservoir has such an enormous amount of energy compared to the system that any change in its temperature as it heats the smaller system is completely negligible. This is the canonical ensemble discussed previously.
 
-![Reservoir](Figures/Reservoir.svg)
+![Reservoir](../Figures/Reservoir.svg)
 
 Now, we're going to assume that for each energy of the system, there is only a single allowed microstate. As such, $\Omega(\epsilon)=1$.
 

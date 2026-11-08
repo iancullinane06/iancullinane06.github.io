@@ -105,11 +105,11 @@ $$
     \frac{1}{8} 4\pi k^2 {\rm d} k
 $$
 
-![DoS|300](Figures/Density_of_States.svg)
+![Density of states](../Figures/Density_of_States.svg)
 
 As such, the number of allowed states with a wave vector whose magnitude lies between $k$ and $k+{\rm d} k$ is given by $g(k){\rm d}k$ where $g(k)$ is the density of states. An example of this is given below in 2-D (assuming a $k_z=\pi/L$).
 
-![DoS|450](Figures/k_space_2D.png)
+![Two-dimensional k-space](../Figures/k_space_2D.png)
 
 This number of states is given by
 

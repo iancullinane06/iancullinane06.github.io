@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
-title: Ian's homepage
-description: Minimal site to display thermo notes.
+title: Ian Cullinane
+description: Thermodynamics lecture notes and LabPlotLib documentation.
 
 defaults:
   - scope:

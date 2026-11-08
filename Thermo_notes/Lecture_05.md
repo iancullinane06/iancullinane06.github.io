@@ -21,7 +21,7 @@ $$
 
 where that last value is true for an ideal gas.
 
-![Adiabats_isotherms](Figures/Adiabats_vs_isotherms.jpg)
+![Adiabats_isotherms](../Figures/Adiabats_vs_isotherms.jpg)
 
 ## Applications
 
@@ -29,7 +29,7 @@ The idea of an isothermal process can be used as a rough model for the atmospher
 
 We can also use an adiabatic model by assuming that as pockets of air rise, they do not exchange energy with neighbouring colder pockets, but instead expand and cool down in order to reach thermodynamic equilibrium. This leads to better agreement with the more complex model close to the Earth's surface, but also diverges when this approximation breaks down.
 
-![Model_atmo](Figures/Model_Atmosphere.png)
+![Model_atmo](../Figures/Model_Atmosphere.png)
 
 ## Heat engines & and the second law
 
@@ -52,13 +52,13 @@ That is, we will supply a system with heat $Q_{\rm H}$, and the system will then
 
 Consider the following engine.
 
-![Carnot_Engine](Figures/Carnot_Engine.svg)
+![Carnot_Engine](../Figures/Carnot_engine.svg)
 
 It is able to draw heat $Q_{\rm H}$ from a reservoir which is at a temperature $T_H$. It then dumps heat $Q_{\rm L}$ to reservoir which is at a temperature $T_L$ while doing some work.
 
 We are going to let the engine perform the following steps: an isothermal expansion, followed by an adiabatic expansion, followed by an isothermal compression, and then another adiabatic compression. These 4 processes will trace out a path shown below in the P-V diagram, where the process follows a series of isotherms and adiabats.
 
-![Carnot_cycle](Figures/Carnot_Cycle.jpg)
+![Carnot_cycle](../Figures/Carnot_Cycle.jpg)
 
 Because the processes B-C and D-A are adiabatic, and A-B and C-D are isothermal, we can make the following statement. Heat $Q_{\rm H}$ enters the engine during process A-B, and heat $Q_{\rm L}$ leaves during C-D, and no heat is lost duing B-C and D-A. Finally, the process is cyclic, meaning there is no change in the internal energy of our engine. As such, the work done by the engine is given by
 
@@ -111,7 +111,7 @@ To answer these questions, we're going to take the Carnot engine and hook up som
 
 Let's assume we have the following system. This system violates Kelvin's statement, as the Kelvin violator is converting heat solely into work.
 
-![Kelvin Violator](Figures/Kelvin_Violator.svg)
+![Kelvin Violator](../Figures/Kelvin_Violator.svg)
 
 In this case, we would have $Q_{\rm  H}' = W$ from the Kelvin violator, and $Q_{\rm H} = Q_{\rm L} + W$ from the Carnot engine. The heat dumped into the reservoir at $T_{rm H}$ is then $Q_{H}-Q_{H}'=Q_{L}$. Thus, the net process of the entire system is a flow of energy of $Q_{\rm L}$ from the cold reservoir to the hot reservoir, which violates Clausius' statement.
 
@@ -119,7 +119,7 @@ In this case, we would have $Q_{\rm  H}' = W$ from the Kelvin violator, and $Q_{
 
 Let's assume we have the following system. This system violates Clausius' statement, as the Clausius violator is transferring heat from a colder body to a hotter body.
 
-![Clausius Violator](Figures/Clausius_Violator.svg)
+![Clausius Violator](../Figures/Clausius_Violator.svg)
 
 The first law implies that for the Carnot engine, $Q_{\rm H}-Q_{\rm L} = W$. The sole effect of the whole system is thus to convert the heat $Q_{\rm H}-Q_{\rm L}$ into work. This violates Kelvin's law!
 
@@ -127,7 +127,7 @@ The first law implies that for the Carnot engine, $Q_{\rm H}-Q_{\rm L} = W$. The
 
 Let's now consider a engine running in the reverse direction to that discussed above.
 
-![Clausius Violator](Figures/Reverse_Carnot_Engine.svg)
+![Clausius Violator](../Figures/Reverse_Carnot_engine.svg)
 
 In this case, work is put into the engine, and heat flows from the cold temperature reservoir to hot reservoir. The relevant efficiency in this case is
 
@@ -167,7 +167,7 @@ While this is a useful result, we must now remember that the Carnot engine does 
 
 Consider now the following setup. We have two engines which are connected to two reservoirs, one at temperature $T_{\rm H}$ and one at $T_{\rm L}$. One engine is a Carnot engine, and so everything is performed reversibly, while the other one is not.
 
-![Clausius_Inequality](Figures/Clausius_Inequality.svg)
+![Clausius_Inequality](../Figures/Clausius_Inequality.svg)
 
 Now let's consider the efficiencies of both engines. For the Carnot engine, I'll use subscript R for reversible, and for the other engine I'll use I for irreversible.
 
@@ -252,7 +252,7 @@ $$
 
 We are now going to consider a cycle which starts with some irreversible process, followed by a reversible process. Such a process is given in the P-V diagram below.
 
-![Irreversible](Figures/Entropy_Irreversible_Process.svg)
+![Irreversible](../Figures/Entropy_Irreversible_Process.svg)
 
 The Clausius' inequality tell us that 
 

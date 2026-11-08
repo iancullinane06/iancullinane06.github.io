@@ -59,11 +59,11 @@ $$
 
 The Volume and Gibb's functions for a VdW gas are shown below versus $P$ for three different temperatures (one above the critical temperature, one at the critical temperature, and one below).
 
-![VDW_behaviour](Figures/VDW_behaviour_various_T.jpg)
+![VDW_behaviour](../Figures/VDW_behaviour_various_T.jpg)
 
 What you can see is that when the temperature of the system is above the critical temperature, both the volume and Gibbs functions are well behaved. However, below the critical temperature, bot the volume and pressure become multi-valued for certain pressures. Let's focus on just the temperature below the critical temperature for a moment.
 
-![VdW_cold](Figures/VDW_behaviour.jpg)
+![VdW_cold](../Figures/VDW_behaviour.jpg)
 
 Imagine we have a system which starts at high pressure and low volume (to the right of the red line). As the pressure is reduced in the system, you will stay on the line of lowest Gibbs energy. Eventually, your system reaches the pressure denoted by the green line. At this point, there are 2 volumes both with the exact same Gibbs energy - one on the bottom branch of the V-P diagram, and one on the top.
 

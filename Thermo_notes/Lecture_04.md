@@ -34,7 +34,7 @@ $$
 
 Our first task is to see if there's an easy form for expressing how the ${\rm d}W$ term behaves. To do this, consider the below setup.
 
-![Sealed_Container](Figures/Sealed_Container.svg)
+![Sealed_Container](../Figures/Sealed_Container.svg)
 
 The force used on the piston to compress the gas is $F=P A$, where $A$ is the area of the piston. By compressing the gas such that it's change in volume is $-{\rm d}V$, we also get that $A{\rm d}x=-{\rm d}V$. Thus, the work done in compressing the gas is given by
 

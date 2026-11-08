@@ -108,15 +108,15 @@ where the first term accounts for all 3 particles being in the same state, the s
 
 * The first term has a coefficient of 1: there is only 1 way to put all three particles in the same state.
 
-![Term_1](Figures/Energy_levels_all_in_one.svg)
+![Term_1](../Figures/Energy_levels_all_in_one.svg)
 
 * The second term has a coefficient of 1/3: There are three possibilities to have one particle in one state and the other two particles in the same, different state. Note that we always have to have 2 particles in level $\epsilon_r$ because of how we have grouped the terms in the previous equation.
 
-![Term_2](Figures/Energy_levels_two_in_one_one_in_other.svg)
+![Term_2](../Figures/Energy_levels_two_in_one_one_in_other.svg)
 
 * The third term has a coefficient of 1/3!: particle 1 is in 1 state of any 3 states, particle 2 is then in 1 state of the remaining 2 states, and particle 3 then has to be in the last available state = (3x2x1 = 3!).
 
-![Term_3](Figures/Energy_levels_all_diff.svg)
+![Term_3](../Figures/Energy_levels_all_diff.svg)
 
 Thus,
 

@@ -81,7 +81,7 @@ $$
     <E> = \frac{3}{2} k_{\rm B} T
 $$
 
-![Entropy_of_mixing](Figures/Monatomic.svg)
+![Entropy_of_mixing](../Figures/Monatomic.svg)
 
 **Rotational motion in a diatomic gas**: Imagine we have 2 particles bonded together with a rigid bond, such that the diatomic particle can then spin about 2 axes. This gives an additional 2 terms due to rotation about each axis which doesn't have a neat symmetry, giving
 
@@ -101,7 +101,7 @@ $$
     <E> = \frac{5}{2} k_{\rm B} T
 $$
 
-![Entropy_of_mixing](Figures/Diatomic_Rotation.svg)
+![Entropy_of_mixing](../Figures/Diatomic_Rotation.svg)
 
 **Vibrational energy in a diatomic gas**: Now imagine that same gas, but where the bond is no longer rigid, but instead acts like a spring with spring constant k. This adds gives another 2 terms:
 
@@ -121,7 +121,7 @@ $$
     <E> = \frac{7}{2} k_{\rm B} T
 $$
 
-![Entropy_of_mixing](Figures/Diatomic_Vibration.svg)
+![Entropy_of_mixing](../Figures/Diatomic_Vibration.svg)
 
 ## Dulong-Petite rule
 

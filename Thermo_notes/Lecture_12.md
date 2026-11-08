@@ -60,7 +60,7 @@ $$
 
 Let's now look at what each of these functions are doing.
 
-![2_level_example](Figures/Thermal_properties_2_level.png)
+![2_level_example](../Figures/Thermal_properties_2_level.png)
 
 These plots are very instructive. Let's consider 2 distinct temperature regimes and see what the plots tell us:
 
@@ -146,7 +146,7 @@ $$
 
 This means the probability of having a dipole contribute an interaction energy of $\mp\mu B$ looks like the below graph
 
-![Para_Prob](Figures/x_versus_prob.png)
+![Para_Prob](../Figures/x_versus_prob.png)
 
 So what does this graph tell us? Over on the left $x<<1$. This means that the magnetic field is weak, and the temperature is high. Under such conditions, each dipole has a 50/50 chance of being parallel or anti-parallel. Over on the far right, we have $x>>1$, which means the magnetic field is strong and the temperature is small. Under these conditions, the dipoles all end up parallel.
 
@@ -182,7 +182,7 @@ $$
     m = -\left(\frac{\partial F}{\partial B}\right)_T = N \mu \tanh (\beta \mu B)
 $$
 
-![x_vs_m](Figures/x_versus_m.png)
+![x_vs_m](../Figures/x_versus_m.png)
 
 Returning to the magnetisation, we wrote this quantity down earlier as
 

@@ -36,7 +36,7 @@ $$
 
 where again we've reduced the volume to account for the volume taken up by other molecules, and included an additional energy term in the partition function related to the interaction energy $-a N^2/V$. We can then calculate the Helmholtz free energy using $F=-k_{\rm B}T \ln (Z_N)$ and then $P=-\left(\frac{\partial F}{\partial V} \right)_T$ to get the above equation of state.
 
-![Isotherms](Figures/Isotherms.jpg)
+![Isotherms](../Figures/Isotherms.jpg)
 
 The Van der Waals equation of state behaves like the Ideal gas at high temperatures (the yellow curves to the top right of the plot). However, at low temperatures, the isotherms begin to exhibit a kink. To figure out what this represents, recall that the iso-thermal compressability of a gas is defined as
 

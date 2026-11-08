@@ -54,11 +54,11 @@ where M is the gram-molecular weight. Gram-molecular weight is an easy thing to 
 
 It turns out the vapour pressure curve is a bit more interesting than we've previously drawn it. Consider the below figure, which shows how the latent heat of vapourisation for water changes with respect to temperature (showing that our above assumption that the latent heat is temperature independant is not always appropriate!). The data is from Engineering ToolBox, (2010). Water - Heat of Vaporization vs. Temperature. [online] Available at: https://www.engineeringtoolbox.com/water-properties-d_1573.html [Accessed 10/11/22]. I've saved the data as a .csv file with this notebook, in units of degrees Celsius and kW/kg respectively. 
 
-![LT](Figures/Vapourisation_Energy_Time_Water.jpg)
+![LT](../Figures/Vapourisation_Energy_Time_Water.jpg)
 
 This shows that at 373.946$^{\rm o}$ C, the latent heat of vapourisation goes to 0! This is known as the critical temperature, and it means that when we draw the pressure vapour curve in a P-T diagram, it stops at the critical point. To really understand what's going on here, we need to move beyond the ideal gas (for the moment!).
 
-![TPCurve](Figures/Triple_Phase_CP.svg)
+![TPCurve](../Figures/Triple_Phase_CP.svg)
 
 # Cooling gases
 
@@ -66,7 +66,7 @@ This shows that at 373.946$^{\rm o}$ C, the latent heat of vapourisation goes to
 
 In our final discussion around how real gases differ from an ideal gas, we are going to return to the Joule expansions which was introduced in Lecture 6. In this expansion, a gas which is initially on the left side of a container is suddenly allowed to expand into the right. If the system is entirely isolated, then no work is done on the gas, and it cannot exchange heat with its surroundings. As such, the internal energy of the gas remains constant.
 
-![Joule_Expansion](Figures/Joule_Expansion.svg)
+![Joule_Expansion](../Figures/Joule_Expansion.svg)
 
 In this scenario, we are interested in answering the following question: after opening the valve, does the temperature of the gas change, does it cool, or does it warm up? To answer this, we will need to evaluate the Joule coefficient, which we define as
 

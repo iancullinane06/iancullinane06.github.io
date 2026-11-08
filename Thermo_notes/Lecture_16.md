@@ -94,7 +94,7 @@ So how else is this picture useful? Let's take diamond as an example, which is t
 
 Since $\Theta_{\rm E} = \frac{\hbar \omega_{\rm E}}{k_{\rm B}}$, this means we can estimate what $\omega_{\rm E}$ is. From our simplistic picture, this frequency is related to the restoring force that the atoms in the lattice are experiencing, and thus is also related to the masses of the individual atoms, the elastic properties of the solid, and the inter-atomic spacing. As such, a measurement of $\Theta_{\rm E}$ gives us a method of probing the internal structure of the material.
 
-![Einstein_Model](Figures/Einstein_Model_vs_Data.jpg)
+![Einstein_Model](../Figures/Einstein_Model_vs_Data.jpg)
 
 ## The Debye Model
 
@@ -193,6 +193,6 @@ $$
     C_{\rm V} = \frac{9 R}{x_{\rm D}^3}  \int_0^{x_{\rm D}} \frac{x^4e^{x}}{(e^{x}-1)^2}
 $$
 
-![Debye_Einstein_Model](Figures/Debye_Einstein_Model_vs_Data.jpg)
+![Debye_Einstein_Model](../Figures/Debye_Einstein_Model_vs_Data.jpg)
 
 {% endraw %}

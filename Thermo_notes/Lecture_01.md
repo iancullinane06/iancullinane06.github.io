@@ -60,7 +60,7 @@ Thus, there are two approaches to studying macroscopic physics. The first is the
 
 So what exactly are macroscopic quantities, and how do they arise? Consider the diagram below, in which we have a gas in a sealed container and a movable piston.
 
-![Sealed_Cotainer](Sealed_Container.svg)
+![Sealed_Cotainer](../Figures/Sealed_Container.svg)
 
 When that piston at rest, the force exerted on the piston balances the pressure exerted on the piston by the gas, and are related through
 

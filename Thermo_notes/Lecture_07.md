@@ -12,7 +12,7 @@ In this lecture, we are going to discuss entropy. In particular, we'll cover:
 
 Let us now consider 2 different ideal gases. They are initially in separate vessels with volume $x V$ an $(1-x) V$ respectively, where $0<x<1$. Both gases are at the same pressure, $P$, and temperature, $T$.
 
-![Entropy_of_mixing](Figures/Entropy_of_mixing.svg)
+![Entropy_of_mixing](../Figures/Entropy_of_mixing.svg)
 
 We can write the pressure of either gas to be
 
@@ -48,7 +48,7 @@ $$
 
 So how does this look?
 
-![Entropy_of_mixing](Figures/Entropy_Mixing_Plot.png)
+![Entropy_of_mixing](../Figures/Entropy_Mixing_Plot.png)
 
 From this, it is clear that the maximum change in entropy occurs when $x=0.5$. We can also arrive at this same result by considering the microstates for the gases. Before mixing, we know that gas 1 is only in the first vessel, while gas 2 is only in the second vessel. After mixing, the number of microstates available to each particle increases by 2 - they can either be in the first vessel, or the second vessel. As such, the statistical weight, $\Omega$, must be multiplied by $2^N$ to account for these new microstates. This means that 
 

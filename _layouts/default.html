@@ -1,98 +1,145 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="dark">
-    {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    {% include head-custom.html %}
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-
-        {% if site.logo %}
-          <img src="{{ site.logo | relative_url }}" alt="Logo">
-        {% endif %}
-
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %}
-
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
-
-        <aside class="symbol-guide" aria-labelledby="symbol-guide-title">
-          <h2 id="symbol-guide-title">Symbols &amp; equations</h2>
-          <h3 id="symbol-guide-title">Thermodynamic Potentials</h3>
-          <dl>
-            <dt><i>U</i></dt>
-            <dd>= Q + W = Tds + PdV</dd>
-            <dt><i>H</i></dt>
-            <dd>Enthalpy, <i>H</i> = <i>U</i> + <i>P</i><i>V</i>.</dd>
-            <dt><i>G</i></dt>
-            <dd>Gibbs free energy, <i>G</i> = <i>U</i> + <i>P</i><i>V</i> − <i>T</i><i>S</i>.</dd>
-            <dt><i>F</i></dt>
-            <dd>Helmholtz free energy, <i>F</i> = <i>U</i> − <i>T</i><i>S</i>.</dd>
-          </dl>
-          <h3 id="symbol-guide-title">State Variables</h3>
-          <dl>
-            <dt><i>S</i></dt>
-            <dd>Entropy; for a microcanonical system, <i>S</i> = <i>k</i><sub>B</sub> ln Ω.</dd>
-            <dt><i>T</i></dt>
-            <dd>Absolute temperature, measured in kelvin (K).</dd>
-            <dt><i>E</i></dt>
-            <dd>Total energy; <i>E</i><sub>i</sub> is the energy of state <i>i</i>.</dd>
-            <dt>Ω</dt>
-            <dd>Multiplicity: number of accessible microstates.</dd>
-          </dl>
-          <h3 id="symbol-guide-title">Probability & Statistical Mechanics</h3>
-          <dl>
-            <dt><i>P</i>(<i>E</i><sub>i</sub>)</dt>
-            <dd>Probability of finding the system in energy state <i>E</i><sub>i</sub>.</dd>
-            <dt><i>Z</i></dt>
-            <dd>Partition function: Σ<sub>i</sub> e<sup>−βE<sub>i</sub></sup>.</dd>
-            <dt>β</dt>
-            <dd>Inverse thermal energy: 1/(<i>k</i><sub>B</sub><i>T</i>).</dd>
-            <dt>ε</dt>
-            <dd>Energy of the system in the reservoir example.</dd>
-          </dl>
-          <h3 id="symbol-guide-title">Other Quantities</h3>
-          <dl>
-            <dt><i>Q</i>, <i>W</i></dt>
-            <dd>Heat transferred and work done on or by a system.</dd>
-            <dt><i>k</i><sub>B</sub></dt>
-            <dd>Boltzmann constant: 1.381 × 10<sup>−23</sup> J/K.</dd>
-          </dl>
-        </aside>
-
-        {% if site.show_downloads %}
-        <ul class="downloads">
-          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-        </ul>
-        {% endif %}
-      </header>
-      <section>
-        {{ content }}
-      </section>
-      <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% include head-custom.html %}
+  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+</head>
+<body>
+  {% assign area = page.path | split: '/' | first %}
+  {% if area == 'examples' %}{% assign area = 'docs' %}{% endif %}
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark">IC</span><span>Ian Cullinane<span class="brand-subtitle">Notes &amp; documentation</span></span></a>
+    <nav class="site-switcher" aria-label="Choose a site">
+      <a href="{{ '/Thermo_notes/' | relative_url }}"{% if area == 'Thermo_notes' %} aria-current="page"{% endif %}>Thermodynamics</a>
+      <a href="{{ '/docs/' | relative_url }}"{% if area == 'docs' %} aria-current="page"{% endif %}>LabPlotLib</a>
+    </nav>
+    {% if area == 'docs' %}
+    <div class="docs-search" data-index-url="{{ '/assets/search-index.json' | relative_url }}">
+      <label class="sr-only" for="docs-search-input">Search LabPlotLib documentation</label>
+      <input id="docs-search-input" type="search" placeholder="Search documentation..." autocomplete="off" aria-controls="docs-search-results" aria-describedby="docs-search-status">
+      <div class="search-panel" hidden>
+        <p id="docs-search-status" role="status" aria-live="polite"></p>
+        <ul id="docs-search-results"></ul>
+      </div>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-  </body>
+    {% endif %}
+  </header>
+
+  {% if area == 'Thermo_notes' %}
+  <div class="definitions">
+    <button class="definitions-toggle" type="button" aria-expanded="false" aria-controls="definitions-panel">Definitions <span aria-hidden="true">→</span></button>
+    <aside id="definitions-panel" class="definitions-panel" aria-labelledby="definitions-title">
+      <p class="eyebrow">Quick reference</p>
+      <h2 id="definitions-title">Symbols &amp; equations</h2>
+      <h3>Thermodynamic potentials</h3>
+      <dl>
+        <dt><i>U</i></dt><dd>Internal energy; Δ<i>U</i> = <i>Q</i> + <i>W</i> (work done on the system).</dd>
+        <dt><i>H</i></dt><dd>Enthalpy, <i>H</i> = <i>U</i> + <i>P</i><i>V</i>.</dd>
+        <dt><i>G</i></dt><dd>Gibbs free energy, <i>G</i> = <i>U</i> + <i>P</i><i>V</i> − <i>T</i><i>S</i>.</dd>
+        <dt><i>F</i></dt><dd>Helmholtz free energy, <i>F</i> = <i>U</i> − <i>T</i><i>S</i>.</dd>
+      </dl>
+      <h3>State variables</h3>
+      <dl>
+        <dt><i>S</i></dt><dd>Entropy; for a microcanonical system, <i>S</i> = <i>k</i><sub>B</sub> ln Ω.</dd>
+        <dt><i>T</i></dt><dd>Absolute temperature, measured in kelvin (K).</dd>
+        <dt><i>P</i></dt><dd>Pressure, the force per unit area.</dd>
+        <dt><i>V</i></dt><dd>Volume occupied by the system.</dd>
+        <dt><i>E</i></dt><dd>Total energy; <i>E</i><sub>i</sub> is the energy of state <i>i</i>.</dd>
+        <dt><i>N</i></dt><dd>Number of particles; <i>n</i> is the amount of substance in moles.</dd>
+        <dt>Ω</dt><dd>Multiplicity: number of accessible microstates.</dd>
+      </dl>
+      <h3>Heat &amp; processes</h3>
+      <dl>
+        <dt><i>Q</i></dt><dd>Heat transferred to the system; positive when heat is supplied.</dd>
+        <dt><i>W</i></dt><dd>Work done on the system; positive for compression. For reversible pressure-volume work, δ<i>W</i> = −<i>P</i> d<i>V</i>.</dd>
+        <dt><i>C</i><sub>V</sub></dt><dd>Heat capacity at constant volume: (∂<i>U</i>/∂<i>T</i>)<sub>V</sub>.</dd>
+        <dt><i>C</i><sub>P</sub></dt><dd>Heat capacity at constant pressure.</dd>
+        <dt>γ</dt><dd>Adiabatic index, <i>C</i><sub>P</sub>/<i>C</i><sub>V</sub>.</dd>
+        <dt>Isothermal</dt><dd>A process at constant temperature.</dd>
+        <dt>Adiabatic</dt><dd>A process with no heat transfer.</dd>
+        <dt>Isobaric</dt><dd>A process at constant pressure.</dd>
+        <dt>Isochoric</dt><dd>A process at constant volume.</dd>
+      </dl>
+      <h3>Statistical mechanics</h3>
+      <dl>
+        <dt><i>P</i>(<i>E</i><sub>i</sub>)</dt><dd>Probability of finding the system in energy state <i>E</i><sub>i</sub>.</dd>
+        <dt><i>Z</i></dt><dd>Partition function: Σ<sub>i</sub> e<sup>−βE<sub>i</sub></sup>.</dd>
+        <dt>β</dt><dd>Inverse thermal energy: 1/(<i>k</i><sub>B</sub><i>T</i>).</dd>
+        <dt>ε</dt><dd>Energy of the system in the reservoir example.</dd>
+        <dt>Microstate</dt><dd>A particular microscopic arrangement of a system.</dd>
+        <dt>Macrostate</dt><dd>A state described by macroscopic properties, potentially containing many microstates.</dd>
+        <dt>Canonical</dt><dd>An ensemble at fixed temperature whose system can exchange energy with a reservoir.</dd>
+      </dl>
+      <h3>Useful relations &amp; constants</h3>
+      <dl>
+        <dt>Ideal gas</dt><dd><i>PV</i> = <i>Nk</i><sub>B</sub><i>T</i> = <i>nRT</i>.</dd>
+        <dt>First law</dt><dd>Δ<i>U</i> = <i>Q</i> + <i>W</i>, with work done on the system positive.</dd>
+        <dt>Entropy</dt><dd>d<i>S</i> = δ<i>Q</i><sub>rev</sub>/<i>T</i> for a reversible change.</dd>
+        <dt>Carnot</dt><dd>Reversible engine efficiency η = 1 − <i>T</i><sub>cold</sub>/<i>T</i><sub>hot</sub>, with temperatures in kelvin.</dd>
+        <dt><i>k</i><sub>B</sub></dt><dd>Boltzmann constant: 1.381 × 10<sup>−23</sup> J/K.</dd>
+        <dt><i>R</i></dt><dd>Gas constant: <i>N</i><sub>A</sub><i>k</i><sub>B</sub> ≈ 8.314 J/(mol K).</dd>
+        <dt><i>N</i><sub>A</sub></dt><dd>Avogadro constant: approximately 6.022 × 10<sup>23</sup> mol<sup>−1</sup>.</dd>
+      </dl>
+      <p class="definitions-more"><a href="{{ '/Thermo_notes/Summary_Lectures_01-08.html' | relative_url }}">Read the full study summary →</a></p>
+    </aside>
+  </div>
+  {% endif %}
+
+  <div class="site-layout{% if area == 'Thermo_notes' %} has-definitions{% endif %}{% if area == 'docs' or area == 'Thermo_notes' %} has-sidebar{% endif %}">
+    {% if area == 'docs' %}
+    <aside class="sidebar" aria-label="LabPlotLib navigation">
+      <p class="eyebrow">LabPlotLib</p>
+      <h2>Documentation</h2>
+      <nav aria-label="Documentation sections">
+        <ul class="nav-list">
+          {% assign doc_pages = site.pages | where_exp: "p", "p.path contains 'docs/'" | where_exp: "p", "p.name contains '.md'" | sort: 'nav_order' %}
+          {% for doc in doc_pages %}
+          <li><a href="{{ doc.url | relative_url }}"{% if doc.url == page.url %} aria-current="page"{% endif %}>{{ doc.title | escape }}</a>
+            {% if doc.url == page.url %}<ul class="page-toc" data-page-toc></ul>{% endif %}
+          </li>
+          {% endfor %}
+          <li><a href="{{ '/examples/' | relative_url }}"{% if page.path == 'examples/index.md' %} aria-current="page"{% endif %}>Examples</a>
+            <ul class="example-nav">
+              {% assign example_pages = site.pages | where_exp: "p", "p.path contains 'examples/'" | where_exp: "p", "p.name contains '.md'" | sort: 'nav_order' %}
+              {% for example in example_pages %}
+              {% unless example.name == 'index.md' %}
+              <li><a href="{{ example.url | relative_url }}"{% if example.url == page.url %} aria-current="page"{% endif %}>{{ example.title | escape }}</a></li>
+              {% endunless %}
+              {% endfor %}
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <a class="sidebar-external" href="https://github.com/iancullinane06/LabPlotLib">LabPlotLib on GitHub ↗</a>
+    </aside>
+    {% elsif area == 'Thermo_notes' %}
+    <aside class="sidebar" aria-label="Thermodynamics navigation">
+      <p class="eyebrow">Study notes</p>
+      <h2>Thermodynamics</h2>
+      <nav aria-label="Lecture notes">
+        <ul class="nav-list">
+          <li><a href="{{ '/Thermo_notes/' | relative_url }}"{% if page.name == 'index.md' %} aria-current="page"{% endif %}>Overview</a></li>
+          {% assign lectures = site.pages | where_exp: "p", "p.path contains 'Thermo_notes/Lecture_'" | where_exp: "p", "p.name contains '.md'" | sort: 'name' %}
+          {% for lecture in lectures %}
+          <li><a href="{{ lecture.url | relative_url }}"{% if lecture.url == page.url %} aria-current="page"{% endif %}>{{ lecture.name | remove: '.md' | replace: '_', ' ' }}</a></li>
+          {% endfor %}
+          <li><a href="{{ '/Lecture_23.pdf' | relative_url }}">Lecture 23 (PDF)</a></li>
+          <li><a href="{{ '/Thermo_notes/Summary_Lectures_01-08.html' | relative_url }}"{% if page.name == 'Summary_Lectures_01-08.md' %} aria-current="page"{% endif %}>Study summary</a></li>
+        </ul>
+      </nav>
+    </aside>
+    {% endif %}
+
+    <main id="main-content" class="main-content">
+      {{ content }}
+      <footer class="site-footer">Hosted on GitHub Pages <span>·</span> <a href="https://github.com/iancullinane06">GitHub</a></footer>
+    </main>
+  </div>
+</body>
 </html>

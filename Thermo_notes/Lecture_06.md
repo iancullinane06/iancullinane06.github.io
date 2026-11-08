@@ -53,7 +53,7 @@ $$
 
 The below figure plots this expression and shows that even though the entropy of the system and reservoir may increase or decrease individually, their combined change is always positive!
 
-![Entropy_example](Figures/Entropy_Universe_plot.png)
+![Entropy_example](../Figures/Entropy_Universe_plot.png)
 
 # Revisiting the first law
 
@@ -131,7 +131,7 @@ For irreversible changes,  ${\rm d} Q \leq T{\rm d} S$ and ${\rm d} W \geq -P{\r
 
 Consider the following isolated system. Imagine we have a 2 containers, each of volume $V_0$, and which are initially isolated from each other by a valve. In the left container, we have an ideal gas with initial pressure $P_i$, and in the right, we have a vacuum. The ideal gas is described by the equation of state $P_i V_0 = N k_{\rm B} T_i$.
 
-![Joule_Expansion](Figures/Joule_Expansion.svg)
+![Joule_Expansion](../Figures/Joule_Expansion.svg)
 
 We then open the valve, and the gas rapidly expands to fill both containers. At this stage, the gas will fill a volume of $2V_0$ and have a temperature and pressure of $T_f$ and $P_f$ respectively. It's equation of state is thus $P_f 2V_0 = N k_{\rm B} T_f$.
 

@@ -15,7 +15,7 @@ layout: lecture
 
 What exactly is temperature? Qualitatively, it is how hot or cold an object is, but this is of course subjective. If we have two bodies, and we know that one with temperature $T_1$ is hotter than one with temperature $T_2$, then we know that $T_1>T_2$.
 
-![Thermal Equilibrium](Thermal_Equilibrium.svg)
+![Thermal Equilibrium](../Figures/Thermal_Equilibrium.svg)
 
 Furthermore, we know that if we bring two bodies into thermal contact with each other, heating (energy in transit) will occur between bodies (shown in b above), and they'll eventually end up with a temperature $T_1>T_{\rm f}>T_2$ (c). When this is achieved, and there is no net flow between the bodies, they are in **thermal equilibrium**.
 
@@ -51,7 +51,7 @@ This means that if we have $N=9$, and $n=7$, we would have an interaction energy
 
 Well, consider examples A and B below. The both have two dipoles which are oriented anti-parallel to the magnetic field, while the other 7 are all in alignment. From a microscopic point of view, the two scenarios are different, as the individual atoms which are anti-parallel are different in both cases. However, from a macroscopic point of view, the interaction energy of both with the magnetic field (which is what we can measure) are the same. These means that a **given macrostate can be described by a large number of equally likely of microstates**.
 
-![B_field_dipoles](Figures/B_Field_Dipoles.svg)
+![B_field_dipoles](../Figures/B_Field_Dipoles.svg)
 
 For the above example, there are $2^N$ microstates. The number of microstates which can give the same interaction energy $E(n)$ is
 
@@ -61,7 +61,7 @@ $$
 
 This is referred to as the statistical weight. It's worth considering exactly what it means - see Section 1.4 of Blundell & Blundell for a more robust discussion of where this term comes from. For the moment, the below plot shows the statistical weight for our above toy problem, where we vary n.
 
-![Stat_Weight](Figures/Stat_weight.png)
+![Stat_Weight](../Figures/Stat_weight.png)
 
 What this shows us is that the statistical weight is highest for when $n$ is between 4 and 5. This should make sense as this is when half of the dipoles are oriented parallel to the B field, and half anti-parallel, and so we have the most freedom with placing them in the grid. This also means that the macrostate given by $n=4/5$ is the most probable state to occur, as these macrostates have the largest number of microstates.
 
@@ -69,7 +69,7 @@ What this shows us is that the statistical weight is highest for when $n$ is bet
 
 We can now use the above expresssion for statistical weight to arrive at a defintion of the temperature of an object. First, let's consider 2 bodies which are in thermal contact.
 
-![Stat_Weight](Figures/Temperature_Statistical_Weight.png)
+![Stat_Weight](../Figures/Temperature_Statistical_Weight.png)
 
 For the following, we are going to assume that this is a closed system (that is, we're not losing any energy to the surroundings) and so, at all times, the total energy of the system is given by $E=E_1+E_2$. As such, all we need to do is specify $E_1$ and the macrostate of the system will be determined. 
 The first system can be in any one of $\Omega_1(E_1)$ microstates and the second system can be in any one of $\Omega_2(E_2)$ microstates. Thus, the system as a whole can be in any number of $\Omega_1(E_1) \Omega_2(E_2)$ microstates.

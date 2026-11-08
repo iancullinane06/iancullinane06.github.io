@@ -7,7 +7,7 @@ layout: lecture
 
 The Joule-Thompson builds on this initial picture. Instead of a container with a stationary gas, and where we let the gas change volume at constant energy, it instead assumes we have a steady flow of gas from a high pressure region at $P_1$ to a low pressure region at $P_2$ via a throttle (or a porous plug, something that can maintain the pressure difference).
 
-![Joule_Expansion](Figures/Joule_Thompson_Expansion.svg)
+![Joule_Expansion](../Figures/Joule_Thompson_Expansion.svg)
 
 This is an irreversible process. However, since the initial and final states are both equilibrium states, we can pretend that it does happen reversibly. This leads to the following treatment.
 

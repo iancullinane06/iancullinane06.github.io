@@ -1,12 +1,12 @@
 ---
 layout: lecture
-title: Summary: Lectures 1–9
+title: "Summary: Lectures 1–9"
 ---
 {% raw %}
 
 # Thermodynamics Study Summary: Lectures 1–9
 
-This summary collects the central definitions, equations, and derivation outlines from [Lecture 1](./Lecture_01.md) through [Lecture 9](./Lecture_09.md). Unless stated otherwise, use the sign convention from these notes: heat $Q$ is positive when supplied to the system, and work $W$ is positive when done on the system.
+This summary collects the central definitions, equations, and derivation outlines from [Lecture 1](./Lecture_01.html) through [Lecture 9](./Lecture_09.html). Unless stated otherwise, use the sign convention from these notes: heat $Q$ is positive when supplied to the system, and work $W$ is positive when done on the system.
 
 ## 1. Counting states and macroscopic descriptions
 

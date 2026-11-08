@@ -1,23 +1,24 @@
 ---
-layout: default
-title: Lecture Notes
+title: Home
 ---
 
-# Lecture Notes
+<div class="home-hero">
+  <p class="eyebrow">A collection of resources</p>
+  <h1>Notes for learning.<br>Tools for working.</h1>
+  <p>Explore thermodynamics and statistical physics, or find your way around LabPlotLib.</p>
+</div>
 
-Browse the notes below. Each Markdown file is rendered as a page on this site.
-
-<label for="lecture-search">Search lecture topics and notes</label>
-<input id="lecture-search" type="search" placeholder="e.g. heat capacity" aria-controls="lecture-list" aria-describedby="lecture-search-status">
-<p id="lecture-search-status" role="status" aria-live="polite"></p>
-
-<ul id="lecture-list">
-{% assign markdown_pages = site.pages | where_exp: "page", "page.name contains '.md'" | sort: "name" %}
-{% for markdown_page in markdown_pages %}
-{% unless markdown_page.name == "index.md" %}
-<li data-search-content="{{ markdown_page.content | normalize_whitespace | escape }}"><a href="{{ markdown_page.url | relative_url }}">{{ markdown_page.name | remove: ".md" | replace: "_", " " }}</a></li>
-{% endunless %}
-{% endfor %}
-</ul>
-
-<script src="{{ '/assets/js/lecture-search.js' | relative_url }}" defer></script>
+<div class="home-cards">
+  <a class="home-card" href="{{ '/Thermo_notes/' | relative_url }}">
+    <span class="card-number">01 / STUDY</span>
+    <h2>Thermodynamics <span aria-hidden="true">↗</span></h2>
+    <p>Lecture notes, equations, and a study summary for thermodynamics and statistical physics.</p>
+    <strong>Browse lecture notes →</strong>
+  </a>
+  <a class="home-card" href="{{ '/docs/' | relative_url }}">
+    <span class="card-number">02 / BUILD</span>
+    <h2>LabPlotLib <span aria-hidden="true">↗</span></h2>
+    <p>Documentation and examples for measurements, fitting, and scientific plotting in Python.</p>
+    <strong>Explore documentation →</strong>
+  </a>
+</div>

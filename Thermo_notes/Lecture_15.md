@@ -75,7 +75,7 @@ $$
 
 This equation describes a Maxwell speed distribution, and is plotted below.
 
-![Max_Boltzmann](Figures/Maxwell_Distribution.png)
+![Max_Boltzmann](../Figures/Maxwell_Distribution.png)
 
 First, the maximum of the distribution occurs at
 
