@@ -4,8 +4,8 @@ title: Home
 
 <div class="home-hero">
   <p class="eyebrow">A collection of resources</p>
-  <h1>Notes for learning.<br>Tools for working.</h1>
-  <p>Explore thermodynamics and statistical physics, or find your way around LabPlotLib.</p>
+  <h1>Notes for Thermo.<br>Tools for labs.</h1>
+  <p>Explore thermodynamics and statistical physics, or find your way around LabPlotLib functions.</p>
 </div>
 
 <div class="home-cards">

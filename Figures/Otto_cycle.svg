@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Ideal Otto cycle pressure-volume diagram</title>
+  <desc id="desc">The cycle goes from 1 to 2 along an isentropic compression curve, vertically up to 3, along an isentropic expansion curve to 4, and vertically down to 1.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0L8 4L0 8Z" fill="#1d5d83"/>
+    </marker>
+  </defs>
+  <rect width="640" height="420" rx="12" fill="#f8fbff"/>
+  <path d="M75 35V355H590" fill="none" stroke="#283b4c" stroke-width="3"/>
+  <text x="35" y="52" font-family="sans-serif" font-size="21" fill="#283b4c">P</text>
+  <text x="580" y="390" font-family="sans-serif" font-size="21" fill="#283b4c">V</text>
+  <g fill="none" stroke="#1d5d83" stroke-width="4">
+    <path d="M505 305C385 296 245 264 180 214"/>
+    <path d="M180 214V69"/>
+    <path d="M180 69C245 127 375 175 505 194"/>
+    <path d="M505 194V305"/>
+  </g>
+  <g fill="none" stroke="#1d5d83" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M390 290C350 282 320 275 295 267"/>
+    <path d="M180 160V120"/>
+    <path d="M300 142C325 154 355 165 385 172"/>
+    <path d="M505 230V270"/>
+  </g>
+  <g fill="#1d5d83">
+    <circle cx="505" cy="305" r="6"/><circle cx="180" cy="214" r="6"/>
+    <circle cx="180" cy="69" r="6"/><circle cx="505" cy="194" r="6"/>
+  </g>
+  <g font-family="sans-serif" font-size="20" font-weight="bold" fill="#283b4c">
+    <text x="518" y="315">1</text><text x="151" y="222">2</text>
+    <text x="151" y="75">3</text><text x="518" y="200">4</text>
+  </g>
+  <g font-family="sans-serif" font-size="15" fill="#466174">
+    <text x="190" y="151">Heat in</text><text x="516" y="255">Heat out</text>
+    <text x="205" y="381">V₂ = V₃</text><text x="460" y="381">V₁ = V₄</text>
+  </g>
+  <g stroke="#90a5b4" stroke-dasharray="4 5">
+    <path d="M180 220V355"/><path d="M505 310V355"/>
+  </g>
+</svg>
