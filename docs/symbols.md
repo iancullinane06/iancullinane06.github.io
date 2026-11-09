@@ -1,8 +1,3 @@
----
-title: Symbols
-nav_order: 5
----
-
 # Mathematical symbols
 
 ```python

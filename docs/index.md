@@ -1,26 +1,23 @@
----
-title: Overview
-nav_order: 0
----
-
 # LabPlotLib reference
 
-This reference describes the LabPlotLib 0.6.0 API. Each page covers one
+This reference describes the LabPlotLib 0.9.0 API. Each page covers one
 module, with examples, parameters, and return values.
 
 | Module | What it covers |
 | --- | --- |
-| [measurement](measurement.html) | Values, uncertainties, arithmetic, and formatting |
-| [plotting](plotting.html) | Line plots, fits, error bars, and residuals |
-| [methods](methods.html) | Polynomial fits, fit statistics, and clustering |
-| [styling](styling.html) | Theme, axes, figure layout, saving, and showing |
-| [symbols](symbols.html) | Mathematical symbol lookup and printing |
+| [measurement](measurement.md) | Values, uncertainties, arithmetic, physics functions, and formatting |
+| [plotting](plotting.md) | Line plots, fits, error bars, residuals, and Bode plots |
+| [fitting](fitting.md) | Arbitrary model fits with χ², p-values, and built-in electronics models |
+| [electronics](electronics.md) | Cutoff, roll-off, resonance, time constants, rise time, and phase |
+| [methods](methods.md) | Polynomial fits, fit statistics, and clustering |
+| [styling](styling.md) | Theme, axes, figure layout, saving, and showing |
+| [symbols](symbols.md) | Mathematical symbol lookup and printing |
 
 Most frequently used names are available directly from `labplotlib`. Other
 functions shown with module imports are available from their respective modules.
-See the [examples]({{ '/examples/' | relative_url }}) for complete runnable
-programs, including measurement formatting, a speed-of-sound calculation, and
-plotting experiments.
+See the [measurement example](../examples/measurement_formatting.py) for a
+complete runnable program, and the [speed-of-sound example](../examples/speed_of_sound.py)
+for a DataFrame-based calculation of a mean with uncertainty.
 
 ## Conventions
 
