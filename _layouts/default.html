@@ -125,7 +125,7 @@
       <nav aria-label="Lecture notes">
         <ul class="nav-list">
           <li><a href="{{ '/Thermo_notes/' | relative_url }}"{% if page.name == 'index.md' %} aria-current="page"{% endif %}>Overview</a></li>
-          {% assign lectures = site.pages | where_exp: "p", "p.path contains 'Thermo_notes/Lecture_'" | where_exp: "p", "p.name contains '.md'" | sort: 'name' %}
+          {% assign lectures = site.pages | where_exp: "p", "p.path contains 'Thermo_notes/Lecture '" | where_exp: "p", "p.name contains '.md'" | sort: 'nav_order' %}
           {% for lecture in lectures %}
           <li><a href="{{ lecture.url | relative_url }}"{% if lecture.url == page.url %} aria-current="page"{% endif %}>{{ lecture.name | remove: '.md' | replace: '_', ' ' }}</a></li>
           {% endfor %}

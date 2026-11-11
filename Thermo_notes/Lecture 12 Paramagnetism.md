@@ -1,5 +1,6 @@
 ---
 layout: lecture
+nav_order: 12
 ---
 {% raw %}
 In the last lecture, we were looking at what quantities we can derive from the partition function. Let's very quickly wrap up that discussion.

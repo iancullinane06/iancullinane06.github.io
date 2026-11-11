@@ -1,5 +1,6 @@
 ---
 layout: lecture
+nav_order: 23
 title: "Summary: Lectures 1–9"
 ---
 {% raw %}

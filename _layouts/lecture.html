@@ -7,7 +7,7 @@ window.MathJax = { tex: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 {{ content }}
 
-{% assign lectures = site.pages | where_exp: "p", "p.path contains 'Thermo_notes/Lecture_'" | where_exp: "p", "p.name contains '.md'" | sort: 'name' %}
+{% assign lectures = site.pages | where_exp: "p", "p.path contains 'Thermo_notes/Lecture '" | where_exp: "p", "p.name contains '.md'" | sort: 'nav_order' %}
 {% for lecture in lectures %}
   {% if lecture.url == page.url %}
     {% assign prev_index = forloop.index0 | minus: 1 %}{% assign prev_page = lectures[prev_index] %}

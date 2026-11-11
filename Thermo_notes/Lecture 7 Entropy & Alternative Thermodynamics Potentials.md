@@ -1,5 +1,6 @@
 ---
 layout: lecture
+nav_order: 7
 ---
 {% raw %}
 In this lecture, we are going to discuss entropy. In particular, we'll cover:

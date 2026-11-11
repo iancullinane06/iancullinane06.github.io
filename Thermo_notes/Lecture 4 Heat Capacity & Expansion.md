@@ -1,5 +1,6 @@
 ---
 layout: lecture
+nav_order: 4
 ---
 {% raw %}
 

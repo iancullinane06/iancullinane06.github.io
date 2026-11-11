@@ -12,7 +12,7 @@ Explore the lectures and study summary below. Use the navigation on the left to 
 <p id="lecture-search-status" role="status" aria-live="polite"></p>
 
 <ul id="lecture-list">
-{% assign markdown_pages = site.pages | where_exp: "p", "p.path contains 'Thermo_notes/'" | where_exp: "p", "p.name contains '.md'" | sort: "name" %}
+{% assign markdown_pages = site.pages | where_exp: "p", "p.path contains 'Thermo_notes/'" | where_exp: "p", "p.name contains '.md'" | sort: "nav_order" %}
 {% for markdown_page in markdown_pages %}
 {% unless markdown_page.name == "index.md" %}
 <li data-search-content="{{ markdown_page.name | append: ' ' | append: markdown_page.content | escape }}"><a href="{{ markdown_page.url | relative_url }}">{{ markdown_page.title | default: markdown_page.name | remove: ".md" | replace: "_", " " }}</a></li>

@@ -1,5 +1,6 @@
 ---
 layout: lecture
+nav_order: 18
 ---
 {% raw %}
 In the previous lecture, we derived the critical volume for a Van Der Waals gas:
