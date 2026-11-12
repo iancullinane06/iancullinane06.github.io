@@ -1,6 +1,6 @@
 # LabPlotLib reference
 
-This reference describes the LabPlotLib 0.9.0 API. Each page covers one
+This reference describes the LabPlotLib 0.11.0 API. Each page covers one
 module, with examples, parameters, and return values.
 
 | Module | What it covers |
