@@ -1,10 +1,11 @@
 # LabPlotLib reference
 
-This reference describes the LabPlotLib 0.11.0 API. Each page covers one
+This reference describes the LabPlotLib 0.8.0 API. Each page covers one
 module, with examples, parameters, and return values.
 
 | Module | What it covers |
 | --- | --- |
+| [dimensions](dimensions.md) | SI base-dimension vectors and unit algebra |
 | [measurement](measurement.md) | Values, uncertainties, arithmetic, physics functions, and formatting |
 | [plotting](plotting.md) | Line plots, fits, error bars, residuals, and Bode plots |
 | [fitting](fitting.md) | Arbitrary model fits with χ², p-values, and built-in electronics models |
@@ -26,7 +27,7 @@ for a DataFrame-based calculation of a mean with uncertainty.
   default. When neither saving nor showing, they leave figure layout to the
   caller.
 - A `Measurement` stores a value and an optional **absolute standard
-  uncertainty**. Its units are display metadata, not dimensional analysis or
-  unit conversion.
+  uncertainty**. Pass a `Unit` for dimensional arithmetic; string units remain
+  display-only metadata.
 - Examples assume LabPlotLib is installed. DataFrame examples additionally
   require pandas.

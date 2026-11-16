@@ -19,8 +19,8 @@ Create a scalar or array-valued measurement.
 | --- | --- |
 | `value` | Finite number or array-like of finite numbers. |
 | `uncertainty` | Non-negative finite absolute standard uncertainty, broadcastable to the shape of `value`; `None` means unknown. |
-| `unit` | Optional non-empty, unprefixed unit label, such as `"Pa"`. Used for display only. |
-| `prefix` | Optional SI prefix name or symbol, such as `"mega"` or `"M"`; requires `unit`. Used to scale the display only. |
+| `unit` | Optional non-empty unit label or `Unit`. Strings such as `"Pa"` are display-only; a `Unit` enables dimensional arithmetic. |
+| `prefix` | Optional SI prefix name or symbol, such as `"mega"` or `"M"`; requires a string unit. Used to scale the display only. |
 
 **Returns:** a `Measurement`. Invalid values, uncertainties, units, or prefixes
 raise `ValueError`.
@@ -154,17 +154,19 @@ print(reading.relative_uncertainty())  # 0.05
 
 ## `set_unit(unit, prefix=None)`
 
-Set or clear display-only unit metadata on an existing measurement.
+Set or clear unit metadata on an existing measurement. A `Unit` participates in
+dimensional arithmetic; a string remains display-only.
 
 | Parameter | Meaning |
 | --- | --- |
-| `unit` | Unprefixed unit string, or `None` to clear the unit. |
-| `prefix` | Optional SI prefix name or case-sensitive symbol; requires a unit. Omit it to clear a previously set prefix. |
+| `unit` | Unprefixed unit string or `Unit`, or `None` to clear the unit. |
+| `prefix` | Optional SI prefix name or case-sensitive symbol; requires a string unit. Omit it to clear a previously set prefix. |
 
 **Returns:** `None`. Raises `ValueError` for an invalid unit or prefix.
 Stored values must be expressed in the base unit: a value of `2_000_000` with
 `unit="Pa", prefix="mega"` displays as `2.000 MPa`. No values are converted
-in storage and no dimensional compatibility is checked.
+in storage. Dimensional compatibility is checked only when `Unit` objects are
+present; calculations with unspecified units remain allowed.
 
 ```python
 from labplotlib import Measurement
@@ -184,8 +186,8 @@ Format a measurement without changing its stored values or display metadata.
 | --- | --- |
 | `format` | `"auto"` uses scientific notation for nonzero magnitudes below `0.001` or at least `1000`; `"raw"` uses decimal notation; `"scientific"` always uses scientific notation. |
 | `decimals` | Number of decimal places, including in the scientific mantissa; defaults to `3`. `None` disables rounding. |
-| `unit` | Optional unprefixed display unit overriding the stored unit. Supplying it without `prefix` omits any stored prefix. |
-| `prefix` | Optional SI prefix name or symbol. With no `unit` argument, a stored unit is used. If neither argument is supplied, the stored prefix is used. `"auto"` picks the engineering prefix (k, M, m, µ, …) that suits the value, so `Measurement(1200, 100)` with unit `"Ω"` prints `1.200 ± 0.100 kΩ`. `prefix="auto"` is also accepted by `Measurement` and `set_unit`. |
+| `unit` | Optional unit string or `Unit` overriding the stored unit. Supplying it without `prefix` omits any stored prefix. |
+| `prefix` | Optional SI prefix name or symbol for string units. With no `unit` argument, a stored unit is used. If neither argument is supplied, the stored prefix is used. `"auto"` picks the engineering prefix (k, M, m, µ, …) that suits the value, so `Measurement(1200, 100)` with unit `"Ω"` prints `1.200 ± 0.100 kΩ`. `prefix="auto"` is also accepted by `Measurement` and `set_unit`. |
 | `uncertainty_digits` | Scalar measurements with an uncertainty only. Round the uncertainty to this many significant figures and the value to the same decimal place, overriding `decimals`. `1` gives `0.04`; `2` gives `0.040`. |
 
 **Returns:** a string containing the value, optional `±` uncertainty, and
