@@ -4,6 +4,9 @@ nav_order: 6
 ---
 {% raw %}
 
+# Entropy
+
+### Topics
 * Entropy changes within closed systems.
 * Entropy an the 1st law.
 * Entropy from a statistical point of view.

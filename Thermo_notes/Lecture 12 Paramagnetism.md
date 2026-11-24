@@ -27,7 +27,7 @@ $$
     G = F+PV =  -k_{\rm B} T \ln(Z) +k_{\rm B} T V \left( \frac{\partial \ln(Z)} {\partial V} \right)_T
 $$
 
-# Example
+### Example
 
 Let's take the 2 level system which was described earlier. This system has a partition function of
 

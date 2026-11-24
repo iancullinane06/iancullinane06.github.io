@@ -5,6 +5,7 @@ nav_order: 7
 {% raw %}
 In this lecture, we are going to discuss entropy. In particular, we'll cover:
 
+# Topics
 * Entropy of mixing.
 * Entropy and probability.
 * Alternative Thermodynamics Potentials (internal energy and enthalpy).
