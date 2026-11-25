@@ -144,6 +144,6 @@ $$
 These distributions are plotted below for different temperatures. You don't need to know
 much about them yet, but you'll be seeing them again in PY2106 (and in all astro courses!).
 
-![Plancks curve graphs](../Figure/Blackbody.png)
+![Plancks curve graphs](../Figures/Blackbody.png)
 
 {% endraw %}

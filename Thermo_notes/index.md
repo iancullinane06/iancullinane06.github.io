@@ -18,7 +18,6 @@ Explore the lectures and study summary below. Use the navigation on the left to 
 <li data-search-content="{{ markdown_page.name | append: ' ' | append: markdown_page.content | escape }}"><a href="{{ markdown_page.url | relative_url }}">{{ markdown_page.title | default: markdown_page.name | remove: ".md" | replace: "_", " " }}</a></li>
 {% endunless %}
 {% endfor %}
-<li data-search-content="Lecture 23 PDF"><a href="{{ '/Lecture_23.pdf' | relative_url }}">Lecture 23 (PDF)</a></li>
 </ul>
 
 <script src="{{ '/assets/js/lecture-search.js' | relative_url }}" defer></script>
